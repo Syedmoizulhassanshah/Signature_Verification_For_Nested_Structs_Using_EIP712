@@ -1,0 +1,21 @@
+{
+  "name": "signature-verification-landcontractv0.8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "ethereumjs-abi": "^0.6.8",
+    "ethereumjs-util": "^7.1.4",
+    "ethereumjs-utils": "^5.2.5"
+  }
+}
