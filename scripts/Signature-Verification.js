@@ -121,7 +121,7 @@ function signHash() {
     );
 }
 
-const privateKey = ethUtil.toBuffer('0x2230b06294fbdcd597dc51a45a8c437c386758742c9eb0f5a72cd10acdda981e', 256) ;
+const privateKey = ethUtil.toBuffer('', 256) ;
 const address = ethUtil.privateToAddress(privateKey);
 const sig = ethUtil.ecsign(signHash(), privateKey);
 
