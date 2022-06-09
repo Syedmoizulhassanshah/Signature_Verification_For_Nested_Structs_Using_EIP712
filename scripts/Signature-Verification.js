@@ -4,6 +4,11 @@ const ethUtil = require('ethereumjs-util');
 // using ethereumjs-abi 0.6.9
 const abi = require('ethereumjs-abi');
 
+// for .env file
+require('dotenv').config();
+
+const PRIVATEKEY  = process.env.PRIVATEKEY;
+
 
 const typedData = {
     types: {
@@ -121,7 +126,7 @@ function signHash() {
     );
 }
 
-const privateKey = ethUtil.toBuffer('', 256) ;
+const privateKey = ethUtil.toBuffer('PRIVATEKEY', 256) ;
 const address = ethUtil.privateToAddress(privateKey);
 const sig = ethUtil.ecsign(signHash(), privateKey);
 
