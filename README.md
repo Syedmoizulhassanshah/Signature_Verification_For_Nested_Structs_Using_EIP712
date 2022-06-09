@@ -66,7 +66,7 @@ Node.js v16.13.2 or later
 
 7. Here, for using EIP712 approach we have to add `EIP712Domain` struct,type-hashes of every structure present in the contract using keccak256(),data-hashes of every struct present in the contract by first encoding struct data using `abi.encode()` method and then hashing it using keccak256().
 
-8. For `DOMAIN_SEPARATOR` we hash the `EIP712Domain` struct variable values in the contructor.
+8. For `DOMAIN_SEPARATOR` we hash the `EIP712Domain` struct variable values in the constructor.
 
 
 
