@@ -23,7 +23,6 @@ Node.js v16.13.2 or later
 ```
 - npm install ethereumjs-util
 - npm install ethereumjs-abi
-
 ```
 2. Then we are creating **typedData** for all the structs present in our contract ,this **typeData** consists of types, primaryType , domain and message fields. 
 
